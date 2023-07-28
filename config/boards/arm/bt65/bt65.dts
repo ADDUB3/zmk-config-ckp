@@ -91,6 +91,7 @@ sensors {
         	a-gpios = <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         	b-gpios = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         	steps = <80>;
+		status = "okay";
 
 	};
 	encoder_2: encoder_2 {
@@ -99,7 +100,7 @@ sensors {
 		a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		steps = <80>;
-
+		status = "okay";
 	};
 	encoder_3: encoder_3 {
 		compatible = "alps,ec11";
@@ -107,7 +108,7 @@ sensors {
 		a-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		steps = <80>;
-
+		status = "okay";
 	};
 	backlight: pwmleds {
 		compatible = "pwm-leds";
